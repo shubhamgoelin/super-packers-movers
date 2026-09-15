@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Super Packers Movers | Frequently Asked Questions</title>
+    <meta name="description" content="Frequently asked questions about Super Packers Movers services — pricing, insurance, delivery times, packing materials and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-left">
+            <a href="tel:+919996068007"><i class="fas fa-phone"></i> +91 9996068007</a>
+            <a href="mailto:info@superpackersmovers.com"><i class="fas fa-envelope"></i> info@superpackersmovers.com</a>
+        </div>
+        <div class="top-bar-right">
+            <a href="https://wa.me/919996068007" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+<header class="header" id="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-truck-moving"></i></div>
+            <div class="logo-text"><div class="brand">Super<span> Packers</span></div><div class="tagline">Safe · Fast · Affordable</div></div>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="services.html">Services <i class="fas fa-chevron-down drop-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="services.html#household"><i class="fas fa-home"></i> Household Shifting</a>
+                    <a href="services.html#office"><i class="fas fa-building"></i> Office Relocation</a>
+                    <a href="services.html#car"><i class="fas fa-car"></i> Car Transport</a>
+                    <a href="services.html#bike"><i class="fas fa-motorcycle"></i> Bike Transport</a>
+                    <a href="services.html#storage"><i class="fas fa-warehouse"></i> Storage & Warehouse</a>
+                    <a href="services.html#international"><i class="fas fa-globe"></i> International Moving</a>
+                </div>
+            </div>
+            <a href="regions.html">All India Service</a>
+            <a href="about.html">About Us</a>
+            <a href="faq.html" class="active">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-cta">
+            <a href="tel:+919996068007" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+            <a href="contact.html#quote" class="btn btn-primary"><i class="fas fa-file-alt"></i> Free Quote</a>
+        </div>
+        <div class="mobile-toggle" onclick="toggleMobileNav()"><span></span><span></span><span></span></div>
+    </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+        <a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-truck-moving"></i></div><div class="logo-text"><div class="brand">Super<span> Packers</span></div></div></a>
+        <div class="mobile-nav-close" onclick="toggleMobileNav()"><i class="fas fa-times"></i></div>
+    </div>
+    <div class="mobile-nav-links">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="services.html"><i class="fas fa-box"></i> Services</a>
+        <a href="regions.html"><i class="fas fa-map-marked-alt"></i> All India Service</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="faq.html"><i class="fas fa-question-circle"></i> FAQs</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+    <div class="mobile-nav-cta">
+        <a href="tel:+919996068007" class="btn btn-outline" style="width:100%;justify-content:center;margin-bottom:12px;"><i class="fas fa-phone"></i> +91 9996068007</a>
+        <a href="contact.html#quote" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fas fa-file-alt"></i> Get Free Quote</a>
+    </div>
+</div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <div class="page-hero-content">
+            <h1>Frequently Asked Questions</h1>
+            <p>Answers to the most common questions about our moving services, pricing, insurance and more.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="sep"><i class="fas fa-chevron-right"></i></span>
+                <span class="current">FAQs</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section" style="background:white">
+    <div class="container">
+        <div style="display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:start" class="faq-layout">
+
+            <!-- FAQ Categories -->
+            <div style="position:sticky;top:90px">
+                <h3 style="font-size:16px;color:var(--secondary);margin-bottom:16px">Browse by Topic</h3>
+                <div style="display:flex;flex-direction:column;gap:6px" id="faqCategories">
+                    <button onclick="showCategory('general')" class="faq-cat-btn active" style="text-align:left;padding:10px 14px;border-radius:10px;background:var(--accent);color:var(--primary);border:none;cursor:pointer;font-size:14px;font-weight:500;transition:var(--transition)"><i class="fas fa-star" style="margin-right:8px;width:16px"></i> General Questions</button>
+                    <button onclick="showCategory('pricing')" class="faq-cat-btn" style="text-align:left;padding:10px 14px;border-radius:10px;background:var(--bg-light);color:var(--text);border:none;cursor:pointer;font-size:14px;font-weight:500;transition:var(--transition)"><i class="fas fa-rupee-sign" style="margin-right:8px;width:16px"></i> Pricing &amp; Quotes</button>
+                    <button onclick="showCategory('packing')" class="faq-cat-btn" style="text-align:left;padding:10px 14px;border-radius:10px;background:var(--bg-light);color:var(--text);border:none;cursor:pointer;font-size:14px;font-weight:500;transition:var(--transition)"><i class="fas fa-box" style="margin-right:8px;width:16px"></i> Packing &amp; Moving</button>
+                    <button onclick="showCategory('insurance')" class="faq-cat-btn" style="text-align:left;padding:10px 14px;border-radius:10px;background:var(--bg-light);color:var(--text);border:none;cursor:pointer;font-size:14px;font-weight:500;transition:var(--transition)"><i class="fas fa-shield-alt" style="margin-right:8px;width:16px"></i> Insurance &amp; Safety</button>
+                    <button onclick="showCategory('services')" class="faq-cat-btn" style="text-align:left;padding:10px 14px;border-radius:10px;background:var(--bg-light);color:var(--text);border:none;cursor:pointer;font-size:14px;font-weight:500;transition:var(--transition)"><i class="fas fa-concierge-bell" style="margin-right:8px;width:16px"></i> Our Services</button>
+                    <button onclick="showCategory('vehicle')" class="faq-cat-btn" style="text-align:left;padding:10px 14px;border-radius:10px;background:var(--bg-light);color:var(--text);border:none;cursor:pointer;font-size:14px;font-weight:500;transition:var(--transition)"><i class="fas fa-car" style="margin-right:8px;width:16px"></i> Vehicle Transport</button>
+                </div>
+                <div style="margin-top:28px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));border-radius:16px;padding:24px;text-align:center;color:white">
+                    <i class="fas fa-headset" style="font-size:32px;margin-bottom:12px;opacity:0.9"></i>
+                    <h4 style="font-size:16px;margin-bottom:8px">Still have questions?</h4>
+                    <p style="font-size:13px;opacity:0.85;margin-bottom:16px">Our team is available 24/7 to help.</p>
+                    <a href="tel:+919996068007" class="btn btn-white" style="font-size:13px;padding:9px 16px;width:100%;justify-content:center"><i class="fas fa-phone"></i> Call Us Now</a>
+                </div>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="faq-grid">
+
+                <!-- General -->
+                <div class="faq-category-block" id="cat-general">
+                    <h3 style="font-size:19px;color:var(--secondary);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--border-light)"><i class="fas fa-star" style="color:var(--primary);margin-right:8px"></i> General Questions</h3>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>What is Super Packers Movers and where do you operate?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Super Packers Movers is India's experienced and one of the largest relocation service providers. We operate across 15,000+ PIN codes throughout India including major metros like Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Pune, and Kolkata, as well as smaller cities and towns. Our head office is in Gurugram, Haryana.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>How long has Super Packers Movers been in business?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Super Packers Movers has been providing professional relocation services since 2014 — over 10 years of experience in the industry. In that time, we have completed 50,000+ successful moves across India.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>Is Super Packers Movers a registered and reliable company?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Yes, Super Packers Movers is a fully government-registered and compliant relocation company. We maintain all necessary licenses and follow industry best practices. Our trusted reputation and thousands of satisfied customers across India stand as testament to our reliability.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>What are your working hours? Can I contact you on weekends?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Our offices are open Monday to Saturday from 9:00 AM to 7:00 PM and Sunday from 10:00 AM to 4:00 PM. However, our customer support via WhatsApp and phone is available 24/7. Moving operations are carried out 7 days a week based on your preferred schedule.</p></div>
+                    </div>
+                </div>
+
+                <!-- Pricing -->
+                <div class="faq-category-block" id="cat-pricing" style="margin-top:36px">
+                    <h3 style="font-size:19px;color:var(--secondary);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--border-light)"><i class="fas fa-rupee-sign" style="color:var(--primary);margin-right:8px"></i> Pricing &amp; Quotes</h3>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>How much does household shifting cost with Super Packers Movers?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>The cost of household shifting depends on several factors: distance between source and destination, volume and type of goods, floor access (lift availability), and any special items (piano, large appliances, etc.). We provide free, no-obligation quotes tailored to your specific requirements. Contact us or fill our quote form for an accurate estimate.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>Are there any hidden charges?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Absolutely not. Super Packers Movers operates with complete pricing transparency. When we provide you a quote, it includes all costs — packing materials, labour, transportation and delivery. There are no surprise charges at the time of billing. We believe in building long-term trust with our customers.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>How can I get a free quote?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>You can get a free quote in three easy ways: (1) Fill our online quote form on this website, (2) Call us at +91 9996068007, or (3) WhatsApp us at +91 9996068007. Once you share your move details, our team will provide a comprehensive quote within 30 minutes.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>What payment methods do you accept?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>We accept all major payment methods including cash, UPI (Google Pay, PhonePe, Paytm), NEFT/RTGS bank transfer, and debit/credit cards. Payment terms are discussed and agreed upon before the move begins, with no surprises on moving day.</p></div>
+                    </div>
+                </div>
+
+                <!-- Packing -->
+                <div class="faq-category-block" id="cat-packing" style="margin-top:36px">
+                    <h3 style="font-size:19px;color:var(--secondary);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--border-light)"><i class="fas fa-box" style="color:var(--primary);margin-right:8px"></i> Packing &amp; Moving</h3>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>What packing materials do you use?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>We use high-quality packing materials including multi-layer bubble wrap, corrugated cardboard boxes, foam padding, stretch film, and waterproof covers. Fragile items like glassware, electronics, and artwork receive special custom packing for maximum protection during transit.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>Will your team dismantle and reassemble furniture?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Yes. Our team includes trained professionals who can dismantle beds, wardrobes, modular kitchens, and other furniture at your source address and reassemble them at your new home. This is included in our standard household shifting service.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>How long does a typical household move take?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Local moves within the same city typically take 1–2 days including packing and unpacking. Inter-city moves usually take 2–5 days depending on the distance. We provide you with a specific timeline estimate when you book your move, so you can plan accordingly.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>Do I need to be present during the move?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>It is recommended that you or a trusted representative be present at both the source and destination to supervise the move and guide our team. However, if you cannot be present throughout, we can coordinate with your representative and keep you updated via phone and WhatsApp.</p></div>
+                    </div>
+                </div>
+
+                <!-- Insurance -->
+                <div class="faq-category-block" id="cat-insurance" style="margin-top:36px">
+                    <h3 style="font-size:19px;color:var(--secondary);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--border-light)"><i class="fas fa-shield-alt" style="color:var(--primary);margin-right:8px"></i> Insurance &amp; Safety</h3>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>Is my shipment insured during the move?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Yes. We provide transit insurance coverage for all shipments. This protects your goods against damage, loss, or theft during the move. The insurance value is based on the declared value of your goods. Please discuss the insurance options with our team when booking.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>What is your guarantee about damage-free delivery?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>We proudly maintain 0% damage guarantees across multiple categories: 0% damage due to rain, 0% delayed delivery, 0% pilferage/theft, 0% road damage, 0% breakage in lacing, and 0% damage in handling. These are backed by our insurance coverage and experienced packing team.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>What happens if my goods are damaged during transit?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>In the unlikely event of any damage, our team will document it with photos and our insurance process will be initiated immediately. We work with reputable insurance partners to ensure quick and fair settlement. Contact us within 24 hours of delivery to report any damage.</p></div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="faq-category-block" id="cat-services" style="margin-top:36px">
+                    <h3 style="font-size:19px;color:var(--secondary);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--border-light)"><i class="fas fa-concierge-bell" style="color:var(--primary);margin-right:8px"></i> Our Services</h3>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>Do you offer storage services if I need to store my goods temporarily?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Yes. We offer secure, climate-controlled storage facilities for both short-term and long-term needs. Our warehouses have 24/7 CCTV surveillance and professional security. Storage is especially useful if there's a gap between your move-out and move-in dates.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>Do you provide international relocation services?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Yes. Super Packers Movers provides complete international moving services including customs documentation, air and sea freight, door-to-door delivery worldwide, and transit insurance. We can reach every major destination globally. Contact us for international moving quotes.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>Can you handle large-scale corporate or office relocations?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Absolutely. We have specialized corporate relocation teams for office moves of all sizes — from small offices to large corporate campuses. Our office relocation services are planned to minimize business disruption, often scheduled during weekends or after hours. We handle IT equipment, servers, office furniture, and confidential documents with special care.</p></div>
+                    </div>
+                </div>
+
+                <!-- Vehicle -->
+                <div class="faq-category-block" id="cat-vehicle" style="margin-top:36px">
+                    <h3 style="font-size:19px;color:var(--secondary);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--border-light)"><i class="fas fa-car" style="color:var(--primary);margin-right:8px"></i> Vehicle Transport</h3>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>How is my car transported? Is it safe?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>We use enclosed carrier trucks for car transport, which fully protect your vehicle from weather, road debris and theft. Each vehicle undergoes a pre-inspection report, is secured with padded straps, and tracked via GPS throughout the journey. Transit insurance is included with every car transport.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>How long does car or bike transport take from Delhi to Bangalore?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Car transport from Delhi to Bangalore typically takes 5–8 days depending on the route, road conditions, and type of carrier service selected. We provide you with a delivery window estimate at the time of booking and keep you updated throughout the journey.</p></div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question"><h4>Do I need to empty my fuel tank before vehicle transport?</h4><div class="faq-toggle"><i class="fas fa-plus"></i></div></div>
+                        <div class="faq-answer"><p>Yes, we recommend keeping the fuel tank at around 1/4 tank (25%) for safety during transport. A full tank adds unnecessary weight and a fully empty tank can cause issues with the fuel pump. Please also remove any valuables and personal items from the vehicle before handover.</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Still Need Help -->
+<section style="padding:72px 0;background:var(--bg-light)">
+    <div class="container">
+        <div style="max-width:700px;margin:0 auto;text-align:center">
+            <span class="section-tag">Need More Help?</span>
+            <h2 class="section-title">Still Have Questions?</h2>
+            <p class="section-subtitle">Our friendly team is available 24/7 to answer all your moving questions. Don't hesitate to reach out!</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px">
+                <a href="tel:+919996068007" class="btn btn-primary btn-lg"><i class="fas fa-phone"></i> Call +91 9996068007</a>
+                <a href="https://wa.me/919996068007" class="btn btn-whatsapp btn-lg" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                <a href="contact.html#quote" class="btn btn-outline-dark btn-lg"><i class="fas fa-file-alt"></i> Get Free Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo footer-logo"><div class="logo-icon"><i class="fas fa-truck-moving"></i></div><div class="logo-text"><div class="brand">Super<span> Packers</span></div><div class="tagline" style="color:rgba(255,255,255,0.45)">Safe · Fast · Affordable</div></div></a>
+                <p class="footer-desc">Super Packers Movers — India's trusted relocation partner serving 15,000+ PIN codes.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/superpackersmovers" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/SuperPackersMo1" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/919996068007" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                    <li><a href="regions.html"><i class="fas fa-chevron-right"></i> All India Service</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html#household"><i class="fas fa-chevron-right"></i> Household Shifting</a></li>
+                    <li><a href="services.html#office"><i class="fas fa-chevron-right"></i> Office Relocation</a></li>
+                    <li><a href="services.html#car"><i class="fas fa-chevron-right"></i> Car Transport</a></li>
+                    <li><a href="services.html#bike"><i class="fas fa-chevron-right"></i> Bike Transport</a></li>
+                    <li><a href="services.html#storage"><i class="fas fa-chevron-right"></i> Storage & Warehouse</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>14/2, Village Ghata, Sector 55-56, Gurugram, Haryana 122002</span></div>
+                    <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+919996068007">+91 9996068007</a></div>
+                    <div class="contact-item"><i class="fab fa-whatsapp"></i><a href="https://wa.me/919996068007" target="_blank">Chat on WhatsApp</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2026 Super Packers Movers. All rights reserved.</p>
+            <div class="footer-bottom-links"><a href="privacy-policy.html">Privacy Policy</a><a href="sitemap.html">Sitemap</a><a href="contact.html">Contact</a></div>
+        </div>
+    </div>
+</footer>
+
+<div class="floating-btns">
+    <a href="https://wa.me/919996068007" class="float-btn float-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+919996068007" class="float-btn float-phone"><i class="fas fa-phone"></i></a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
